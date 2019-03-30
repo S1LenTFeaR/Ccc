@@ -9,29 +9,15 @@ for(i=0;i<20;i++)
 {
     Arr[i]=rand();
     printf("%d\n",Arr[i]);
-    if(C>=Arr[i])
+    if(abs(C) >= abs(Arr[i]))
     {
-        printf("C=%d\n",C);
     }
     else
     {
         C=Arr[i];
-        printf("C=%d\n",C);
     }
 }
-C=Arr[0];
-for(i=0;i<20;i++)
-{
-    if(C>=Arr[i])
-    {
-        printf("C=%d\n",C);
-    }
-    else
-    {
-        C=Arr[i];
-        printf("C=%d\n",C);
-    }
-}
+printf("MAX=%d", C);
 return 0;
 }
 
